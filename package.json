@@ -2,6 +2,8 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
+    "release": "lerna publish",
+    "release:next": "lerna publish prerelease",
     "test": "jest --watch",
     "test:ci": "jest --coverage --verbose",
     "build": "ttsc --build",

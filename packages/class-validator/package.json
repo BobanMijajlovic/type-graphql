@@ -1,6 +1,6 @@
 {
   "name": "@typegraphql/class-validator",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-next.0",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
@@ -8,15 +8,14 @@
     "prepublishOnly": "ttsc -b"
   },
   "peerDependencies": {
-    "@typegraphql/core": "^1.0.0-alpha.0",
     "@types/node": "*",
     "class-validator": "^0.9.1"
   },
   "dependencies": {
+    "@typegraphql/core": "file:../core",
     "tslib": "^1.9.3"
   },
   "devDependencies": {
-    "@typegraphql/core": "file:../core",
     "@types/node": "^12.0.7",
     "@zerollup/ts-transform-paths": "^1.7.3",
     "class-validator": "^0.9.1",
