@@ -1,4 +1,11 @@
+import path from "path";
+
 import foo from "@src/foo";
 import bar from "@src/bar";
+import { ensureInstalledOnlySinglePackageVersion } from "@src/utils";
 
-export { foo, bar };
+ensureInstalledOnlySinglePackageVersion(
+  path.resolve(__dirname, "../package.json"),
+);
+
+export { foo, bar, ensureInstalledOnlySinglePackageVersion };

@@ -1,6 +1,10 @@
-import foobar from "@src/foobar";
-import ensureInstalledCorrectDepencenciesVersions from "@src/check-deps-version";
+import path from "path";
 
-ensureInstalledCorrectDepencenciesVersions();
+import foobar from "@src/foobar";
+import { ensureInstalledOnlySinglePackageVersion } from "@typegraphql/core";
+
+ensureInstalledOnlySinglePackageVersion(
+  path.resolve(__dirname, "../package.json"),
+);
 
 export { foobar };

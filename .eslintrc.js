@@ -16,6 +16,7 @@ module.exports = {
   ],
   rules: {
     "no-magic-numbers": "off",
+    "no-console": ["error", { allow: ["warn", "error"] }],
     "@typescript-eslint/array-type": ["error", "array-simple"],
     "@typescript-eslint/await-thenable": "error",
     "@typescript-eslint/explicit-member-accessibility": [
